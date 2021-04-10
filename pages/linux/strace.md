@@ -6,6 +6,10 @@
 
 `strace -p {{pid}}`
 
+- Trace the process and follow its child processes or threads too:
+
+`strace -p {{pid}} -f`
+
 - Trace a process and filter output by system call:
 
 `strace -p {{pid}} -e {{system_call_name}}`
